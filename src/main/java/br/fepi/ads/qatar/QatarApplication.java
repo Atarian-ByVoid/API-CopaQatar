@@ -9,5 +9,6 @@ public class QatarApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(QatarApplication.class, args);
 	}
+	
 
 }
