@@ -25,7 +25,7 @@ public class selecao {
         return cor_camisa_principal;
     }
 
-    public void setCor_camisa_principal(String cor_camisa_princial){
+    public void setCor_camisa_principal(String cor_camisa_principal){
      this.cor_camisa_principal = cor_camisa_principal;
 
     }
