@@ -37,13 +37,13 @@ public class SelecaoResources {
 
 	}
 
-    @RequestMapping(value ="{id}", method= RequestMethod.DELETE)
-    public void deletar(@RequestBody Long id){
+    @RequestMapping(value ="/{id}", method= RequestMethod.DELETE)
+    public void deletar(@PathVariable("id") Long id){
 
         selecao_repository.deleteById(id);
     }
 
-    @RequestMapping(value = "{id}", method= RequestMethod.PUT)
+    @RequestMapping(value = "/{id}", method= RequestMethod.PUT)
     public void alterar(@RequestBody Selecao selecao, @PathVariable("id")Long id){
 
         selecao.setId(id);
